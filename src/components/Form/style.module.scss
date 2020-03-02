@@ -1,0 +1,66 @@
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10% 40%;
+	// .input{
+	// 	width: 300px;
+	// }
+	.input{
+		width: 300px;
+		border: 1px solid #d3d3d3;
+		&.Error{
+			border: 1px solid red;
+		}
+		&.greenborder{
+			// border: 1px solid rgb(107, 255, 107);
+			background-color: rgb(107, 255, 107);
+		}
+	}
+	.textarea{
+		margin-top: 20px;
+		border: 1px solid #d3d3d3;
+		&.Error{
+			border: 1px solid red;
+		}
+		
+	}
+	.payBlock{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start; 
+		margin: 10px 0 0px; 
+	}
+	.label-input{
+		margin: 0px 0px 10px;
+	}
+	
+	.submit{
+		margin-top: 10px;
+		width: 300px;
+		height: 50px;
+		font-weight: bold;
+	}
+}
+// .input{
+// 	width: 300px;
+// }
+
+// .textarea{
+// 	margin-top: 20px;
+// }
+// .payBlock{
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: flex-start; 
+// 	margin: 10px 0 0px; 
+// }
+// .label-input{
+// 	margin: 0px 0px 10px;
+// }
+
+// .submit{
+// 	margin-top: 10px;
+// 	width: 300px;
+// 	height: 50px;
+// }
