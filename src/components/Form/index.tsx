@@ -42,10 +42,17 @@ const Form: React.FC = () => {
 		if (!agreeWithPolicy) alert('You must agree with Policy')
 		else alert('Order was confirmed');
 
-		(name && phone && adress && agreeWithPolicy) ? event.stopPropagation() : event.preventDefault() //не возвращается к дефолтному/пустому значению
-
-
-
+		// вариант 1
+		//(name && phone && adress && agreeWithPolicy) ? event.stopPropagation() : event.preventDefault() //не возвращается к дефолтному/пустому значению
+		// вариант 2
+		if (name && phone && adress && agreeWithPolicy) {
+			setName('')
+			setPhone('')
+			setAdress('')
+			isAgreeWithPolicy(false)
+			event.preventDefault()
+		}
+		event.preventDefault()
 	}
 
 	return (
